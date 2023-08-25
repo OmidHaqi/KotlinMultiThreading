@@ -8,8 +8,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-    //by default mainActivity is main Thread.
+    //method 0 => main Thread.
+    //by default mainActivity is mainThread.
 
         Log.v("testThread",Thread.currentThread().name)
 
@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
             }
 
         })
+        thread3.start()
 
     }
 }
