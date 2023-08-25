@@ -23,5 +23,13 @@ class MainActivity : AppCompatActivity() {
         val thread2 = Thread(Thread2())
         thread2.start()
 
+    //method 3 => object anonymous
+        val thread3 = Thread(object :Runnable{
+            override fun run() {
+                Log.v("testThread",Thread.currentThread().name)
+            }
+
+        })
+
     }
 }
