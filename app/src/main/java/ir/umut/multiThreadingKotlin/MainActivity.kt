@@ -32,5 +32,11 @@ class MainActivity : AppCompatActivity() {
         })
         thread3.start()
 
+        //method 4 => lambada
+        val thread4 = Thread{
+            Log.v("testThread",Thread.currentThread().name)
+        }.start()
+
+
     }
 }
