@@ -6,7 +6,7 @@ class Thread1:Thread() {
     override fun run() {
         super.run()
 
-    // do work
+    // do work=>
     Log.v("testThread",Thread.currentThread().name)
     }
 }

@@ -16,8 +16,12 @@ class MainActivity : AppCompatActivity() {
 
 
     //method 1 => create class
-      val thread1 = Thread1()
+        val thread1 = Thread1()
         thread1.start()
+
+    //method 2 => runnable interface
+        val thread2 = Thread(Thread2())
+        thread2.start()
 
     }
 }
